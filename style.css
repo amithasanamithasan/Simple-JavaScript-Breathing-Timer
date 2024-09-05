@@ -1,0 +1,39 @@
+body{
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background: #9fdbdd;
+}
+.container{
+    text-align: center;
+    
+}
+.tex{
+text-decoration: rgb(25, 160, 153);
+font-size: large 100px;
+background: white;
+border:#a61b1b00;
+
+}
+.timer{
+background: #1caaba;
+font-family: 'Arial, sans-serif';
+font-size:  100px;
+text-decoration-color: #b18821;
+
+margin: 20px;
+}
+
+button{
+    cursor: pointer;
+    font-size: 30px;
+    padding: 20px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    border-color: aqua;
+
+    
+}
