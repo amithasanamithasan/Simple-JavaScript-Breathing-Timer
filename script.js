@@ -1,3 +1,4 @@
+let=timeLeft;
 const TimerDisplay= document.getElementById('timer')
 const StartDisplay= document.getElementById('start-btn')
 const StopDisplay= document.getElementById('stop-btn')
@@ -17,7 +18,7 @@ if(--timer<0){
     // 3000 milisecound por punoriea abr Breath in start hobe 
    setTimeout(()=>{
     TimerDisplay.innerText='BREATH IN';
-
+    startTimer(timeLeft);
    },3000)
 }
 
@@ -26,7 +27,7 @@ if(--timer<0){
 }
 StartDisplay.addEventListener('click',()=>{
     // console.log('start')
-    const timeLeft=90;
+    timeLeft=90;
     startTimer(timeLeft);
 })
 
