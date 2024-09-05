@@ -6,9 +6,13 @@ const startTimer=(time)=>{
 // console.log('start Timer Runnings')
 let timer= time;
   const TimerInterval=  setInterval(()=>{
+    // console.log( 'timer rendaring 1scound ');
        const minutes= parseInt(timer / 60 , 10);
        const secound=parseInt(timer % 60 ,10)
-// console.log( 'timer rendaring 1scound '); 
+
+   const displayMinutes=    minutes<10 ?  '0'+minutes: minutes;
+ const displaySecound =    secound<10? '0'+ secound: secound;
+ 
 TimerDisplay.innerText=minutes +':'+secound;
 
 if(--timer<0){
